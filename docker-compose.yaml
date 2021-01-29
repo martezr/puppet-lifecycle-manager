@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  ui:
+    hostname: frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    links:
+      - recommendation
+  recommendation:
+    hostname: recommendation
+    build: ./recommendation
+    ports:
+      - "8000:8000"
+  endpointservice:
+    hostname: endpointservice
+    build: ./endpointservice
+    ports:
+      - "8090:8090"
+    depends_on:
+      - database
+  database:
+    hostname: database
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=dbpassword

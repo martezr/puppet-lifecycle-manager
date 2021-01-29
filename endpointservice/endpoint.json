@@ -1,0 +1,624 @@
+{
+  "endpoints": [
+    {
+      "data": {
+        "architecture": "standard", 
+        "nodecount": 12, 
+        "peversion": "2019.8.1"
+      }, 
+      "description": "production pe", 
+      "facts": {
+        "aio_agent_build": "6.17.0", 
+        "aio_agent_version": "6.17.0", 
+        "architecture": "x86_64", 
+        "augeas": {
+          "version": "1.12.0"
+        }, 
+        "augeasversion": "1.12.0", 
+        "bios_release_date": "04/05/2016", 
+        "bios_vendor": "Phoenix Technologies LTD", 
+        "bios_version": "6.00", 
+        "blockdevice_sda_model": "Virtual disk", 
+        "blockdevice_sda_size": 42949672960, 
+        "blockdevice_sda_vendor": "VMware", 
+        "blockdevices": "sda", 
+        "boardmanufacturer": "Intel Corporation", 
+        "boardproductname": "440BX Desktop Reference Platform", 
+        "boardserialnumber": "None", 
+        "chassisassettag": "No Asset Tag", 
+        "chassistype": "Other", 
+        "clientcert": "peserver01.grt.local", 
+        "clientnoop": false, 
+        "clientversion": "6.17.0", 
+        "dhcp_servers": {
+          "ens192": "10.0.0.1", 
+          "system": "10.0.0.1"
+        }, 
+        "disks": {
+          "sda": {
+            "model": "Virtual disk", 
+            "size": "40.00 GiB", 
+            "size_bytes": 42949672960, 
+            "vendor": "VMware"
+          }
+        }, 
+        "dmi": {
+          "bios": {
+            "release_date": "04/05/2016", 
+            "vendor": "Phoenix Technologies LTD", 
+            "version": "6.00"
+          }, 
+          "board": {
+            "manufacturer": "Intel Corporation", 
+            "product": "440BX Desktop Reference Platform", 
+            "serial_number": "None"
+          }, 
+          "chassis": {
+            "asset_tag": "No Asset Tag", 
+            "type": "Other"
+          }, 
+          "manufacturer": "VMware, Inc.", 
+          "product": {
+            "name": "VMware Virtual Platform", 
+            "serial_number": "VMware-42 20 2f 9b 26 0f 66 36-43 3d 78 6c 50 1b be 4b", 
+            "uuid": "9B2F2042-0F26-3666-433D-786C501BBE4B"
+          }
+        }, 
+        "domain": "grt.local", 
+        "facterversion": "3.14.12", 
+        "filesystems": "xfs", 
+        "fips_enabled": false, 
+        "fqdn": "peserver01.grt.local", 
+        "gid": "root", 
+        "hardwareisa": "x86_64", 
+        "hardwaremodel": "x86_64", 
+        "hostname": "peserver01", 
+        "hypervisors": {
+          "vmware": {
+            "version": "ESXi 6.5"
+          }
+        }, 
+        "id": "root", 
+        "identity": {
+          "gid": 0, 
+          "group": "root", 
+          "privileged": true, 
+          "uid": 0, 
+          "user": "root"
+        }, 
+        "interfaces": "ens192,lo", 
+        "ipaddress": "10.0.0.252", 
+        "ipaddress6": "2601:248:5081:4d00::84fc", 
+        "ipaddress6_ens192": "2601:248:5081:4d00::84fc", 
+        "ipaddress6_lo": "::1", 
+        "ipaddress_ens192": "10.0.0.252", 
+        "ipaddress_lo": "127.0.0.1", 
+        "is_pe": false, 
+        "is_virtual": true, 
+        "kernel": "Linux", 
+        "kernelmajversion": "3.10", 
+        "kernelrelease": "3.10.0-1127.8.2.el7.x86_64", 
+        "kernelversion": "3.10.0", 
+        "load_averages": {
+          "15m": 0.14, 
+          "1m": 0.21, 
+          "5m": 0.14
+        }, 
+        "macaddress": "00:50:56:a0:c3:4d", 
+        "macaddress_ens192": "00:50:56:a0:c3:4d", 
+        "manufacturer": "VMware, Inc.", 
+        "memory": {
+          "swap": {
+            "available": "3.50 GiB", 
+            "available_bytes": 3758092288, 
+            "capacity": "0%", 
+            "total": "3.50 GiB", 
+            "total_bytes": 3758092288, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }, 
+          "system": {
+            "available": "8.76 GiB", 
+            "available_bytes": 9407832064, 
+            "capacity": "43.45%", 
+            "total": "15.49 GiB", 
+            "total_bytes": 16637517824, 
+            "used": "6.73 GiB", 
+            "used_bytes": 7229685760
+          }
+        }, 
+        "memoryfree": "8.76 GiB", 
+        "memoryfree_mb": 8972.0078125, 
+        "memorysize": "15.49 GiB", 
+        "memorysize_mb": 15866.7734375, 
+        "mountpoints": {
+          "/": {
+            "available": "25.38 GiB", 
+            "available_bytes": 27247628288, 
+            "capacity": "16.75%", 
+            "device": "/dev/mapper/centos_centos7base-root", 
+            "filesystem": "xfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "relatime", 
+              "attr2", 
+              "inode64", 
+              "noquota"
+            ], 
+            "size": "30.48 GiB", 
+            "size_bytes": 32728944640, 
+            "used": "5.10 GiB", 
+            "used_bytes": 5481316352
+          }, 
+          "/boot": {
+            "available": "791.60 MiB", 
+            "available_bytes": 830050304, 
+            "capacity": "21.93%", 
+            "device": "/dev/sda1", 
+            "filesystem": "xfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "relatime", 
+              "attr2", 
+              "inode64", 
+              "noquota"
+            ], 
+            "size": "1014.00 MiB", 
+            "size_bytes": 1063256064, 
+            "used": "222.40 MiB", 
+            "used_bytes": 233205760
+          }, 
+          "/dev": {
+            "available": "7.74 GiB", 
+            "available_bytes": 8306724864, 
+            "capacity": "0%", 
+            "device": "devtmpfs", 
+            "filesystem": "devtmpfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "nosuid", 
+              "size=8112036k", 
+              "nr_inodes=2028009", 
+              "mode=755"
+            ], 
+            "size": "7.74 GiB", 
+            "size_bytes": 8306724864, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }, 
+          "/dev/hugepages": {
+            "available": "0 bytes", 
+            "available_bytes": 0, 
+            "capacity": "100%", 
+            "device": "hugetlbfs", 
+            "filesystem": "hugetlbfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "relatime"
+            ], 
+            "size": "0 bytes", 
+            "size_bytes": 0, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }, 
+          "/dev/mqueue": {
+            "available": "0 bytes", 
+            "available_bytes": 0, 
+            "capacity": "100%", 
+            "device": "mqueue", 
+            "filesystem": "mqueue", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "relatime"
+            ], 
+            "size": "0 bytes", 
+            "size_bytes": 0, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }, 
+          "/dev/pts": {
+            "available": "0 bytes", 
+            "available_bytes": 0, 
+            "capacity": "100%", 
+            "device": "devpts", 
+            "filesystem": "devpts", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "nosuid", 
+              "noexec", 
+              "relatime", 
+              "gid=5", 
+              "mode=620", 
+              "ptmxmode=000"
+            ], 
+            "size": "0 bytes", 
+            "size_bytes": 0, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }, 
+          "/dev/shm": {
+            "available": "7.75 GiB", 
+            "available_bytes": 8318734336, 
+            "capacity": "0.00%", 
+            "device": "tmpfs", 
+            "filesystem": "tmpfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "nosuid", 
+              "nodev"
+            ], 
+            "size": "7.75 GiB", 
+            "size_bytes": 8318758912, 
+            "used": "24.00 KiB", 
+            "used_bytes": 24576
+          }, 
+          "/run": {
+            "available": "7.73 GiB", 
+            "available_bytes": 8298217472, 
+            "capacity": "0.25%", 
+            "device": "tmpfs", 
+            "filesystem": "tmpfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "nosuid", 
+              "nodev", 
+              "mode=755"
+            ], 
+            "size": "7.75 GiB", 
+            "size_bytes": 8318758912, 
+            "used": "19.59 MiB", 
+            "used_bytes": 20541440
+          }, 
+          "/run/user/0": {
+            "available": "1.55 GiB", 
+            "available_bytes": 1663754240, 
+            "capacity": "0%", 
+            "device": "tmpfs", 
+            "filesystem": "tmpfs", 
+            "options": [
+              "rw", 
+              "seclabel", 
+              "nosuid", 
+              "nodev", 
+              "relatime", 
+              "size=1624760k", 
+              "mode=700"
+            ], 
+            "size": "1.55 GiB", 
+            "size_bytes": 1663754240, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }, 
+          "/sys/fs/cgroup": {
+            "available": "7.75 GiB", 
+            "available_bytes": 8318758912, 
+            "capacity": "0%", 
+            "device": "tmpfs", 
+            "filesystem": "tmpfs", 
+            "options": [
+              "ro", 
+              "seclabel", 
+              "nosuid", 
+              "nodev", 
+              "noexec", 
+              "mode=755"
+            ], 
+            "size": "7.75 GiB", 
+            "size_bytes": 8318758912, 
+            "used": "0 bytes", 
+            "used_bytes": 0
+          }
+        }, 
+        "mtu_ens192": 1500, 
+        "mtu_lo": 65536, 
+        "netmask": "255.0.0.0", 
+        "netmask6": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+        "netmask6_ens192": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+        "netmask6_lo": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+        "netmask_ens192": "255.0.0.0", 
+        "netmask_lo": "255.0.0.0", 
+        "network": "10.0.0.0", 
+        "network6": "2601:248:5081:4d00::84fc", 
+        "network6_ens192": "2601:248:5081:4d00::84fc", 
+        "network6_lo": "::1", 
+        "network_ens192": "10.0.0.0", 
+        "network_lo": "127.0.0.0", 
+        "networking": {
+          "dhcp": "10.0.0.1", 
+          "domain": "grt.local", 
+          "fqdn": "peserver01.grt.local", 
+          "hostname": "peserver01", 
+          "interfaces": {
+            "ens192": {
+              "bindings": [
+                {
+                  "address": "10.0.0.252", 
+                  "netmask": "255.0.0.0", 
+                  "network": "10.0.0.0"
+                }
+              ], 
+              "bindings6": [
+                {
+                  "address": "2601:248:5081:4d00::84fc", 
+                  "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+                  "network": "2601:248:5081:4d00::84fc"
+                }, 
+                {
+                  "address": "2601:248:5081:4d00:250:56ff:fea0:c34d", 
+                  "netmask": "ffff:ffff:ffff:ffff::", 
+                  "network": "2601:248:5081:4d00::"
+                }, 
+                {
+                  "address": "fe80::250:56ff:fea0:c34d", 
+                  "netmask": "ffff:ffff:ffff:ffff::", 
+                  "network": "fe80::"
+                }
+              ], 
+              "dhcp": "10.0.0.1", 
+              "ip": "10.0.0.252", 
+              "ip6": "2601:248:5081:4d00::84fc", 
+              "mac": "00:50:56:a0:c3:4d", 
+              "mtu": 1500, 
+              "netmask": "255.0.0.0", 
+              "netmask6": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+              "network": "10.0.0.0", 
+              "network6": "2601:248:5081:4d00::84fc", 
+              "scope6": "global"
+            }, 
+            "lo": {
+              "bindings": [
+                {
+                  "address": "127.0.0.1", 
+                  "netmask": "255.0.0.0", 
+                  "network": "127.0.0.0"
+                }
+              ], 
+              "bindings6": [
+                {
+                  "address": "::1", 
+                  "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+                  "network": "::1"
+                }
+              ], 
+              "ip": "127.0.0.1", 
+              "ip6": "::1", 
+              "mtu": 65536, 
+              "netmask": "255.0.0.0", 
+              "netmask6": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+              "network": "127.0.0.0", 
+              "network6": "::1", 
+              "scope6": "host"
+            }
+          }, 
+          "ip": "10.0.0.252", 
+          "ip6": "2601:248:5081:4d00::84fc", 
+          "mac": "00:50:56:a0:c3:4d", 
+          "mtu": 1500, 
+          "netmask": "255.0.0.0", 
+          "netmask6": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", 
+          "network": "10.0.0.0", 
+          "network6": "2601:248:5081:4d00::84fc", 
+          "primary": "ens192", 
+          "scope6": "global"
+        }, 
+        "operatingsystem": "CentOS", 
+        "operatingsystemmajrelease": "7", 
+        "operatingsystemrelease": "7.8.2003", 
+        "os": {
+          "architecture": "x86_64", 
+          "family": "RedHat", 
+          "hardware": "x86_64", 
+          "name": "CentOS", 
+          "release": {
+            "full": "7.8.2003", 
+            "major": "7", 
+            "minor": "8"
+          }, 
+          "selinux": {
+            "config_mode": "enforcing", 
+            "current_mode": "enforcing", 
+            "enabled": true, 
+            "enforced": true, 
+            "policy_version": "31"
+          }
+        }, 
+        "osfamily": "RedHat", 
+        "partitions": {
+          "/dev/mapper/centos_centos7base-root": {
+            "filesystem": "xfs", 
+            "mount": "/", 
+            "size": "30.50 GiB", 
+            "size_bytes": 32744931328, 
+            "uuid": "4db64aaa-015a-434a-80ac-bdd21e7dae34"
+          }, 
+          "/dev/mapper/centos_centos7base-swap": {
+            "filesystem": "swap", 
+            "size": "3.50 GiB", 
+            "size_bytes": 3758096384, 
+            "uuid": "81251f8f-a3c9-41d5-9176-e5c04da778a6"
+          }, 
+          "/dev/sda1": {
+            "filesystem": "xfs", 
+            "mount": "/boot", 
+            "size": "1.00 GiB", 
+            "size_bytes": 1073741824, 
+            "uuid": "1c3e336a-01b7-4591-ae61-a225aee513e7"
+          }, 
+          "/dev/sda2": {
+            "filesystem": "LVM2_member", 
+            "size": "34.00 GiB", 
+            "size_bytes": 36506173440, 
+            "uuid": "YQT0u2-9GnE-615k-ldsh-uBW5-PctL-KydcQr"
+          }
+        }, 
+        "path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin", 
+        "pe_build": "2019.8.1", 
+        "pe_concat_basedir": "/opt/puppetlabs/puppet/cache/pe_concat", 
+        "pe_patch": {
+          "blackouts": {}, 
+          "block_patching_on_warnings": "false", 
+          "blocked": false, 
+          "blocked_reasons": [], 
+          "last_run": {}, 
+          "missing_update_kbs": [], 
+          "package_update_count": 0, 
+          "package_updates": [], 
+          "patch_group": "", 
+          "pinned_packages": [], 
+          "reboot_override": "default", 
+          "reboots": {
+            "reboot_required": "unknown"
+          }, 
+          "security_package_update_count": 0, 
+          "security_package_updates": [], 
+          "warnings": {
+            "security_update_file": "Security update file not found, update information invalid", 
+            "update_file": "Update file not found, update information invalid"
+          }
+        }, 
+        "pe_postgresql_info": {
+          "data_partition_available_bytes": 27247628288, 
+          "data_partition_size_bytes": 32728944640, 
+          "installed_packages": {
+            "pe-postgresql-common": "2019.8-1", 
+            "pe-postgresql11": "11.8-1", 
+            "pe-postgresql11-contrib": "11.8-1", 
+            "pe-postgresql11-pglogical": "2.3.2-1", 
+            "pe-postgresql11-pgrepack": "1.4.5-1", 
+            "pe-postgresql11-server": "11.8-1"
+          }, 
+          "installed_server_version": "11", 
+          "versions": {
+            "11": {
+              "app_dir": "/opt/puppetlabs/server/apps/postgresql/11", 
+              "data_dir": "/opt/puppetlabs/server/data/postgresql/11", 
+              "tablespaces": [
+                "/opt/puppetlabs/server/data/postgresql/activity/PG_11_201809051", 
+                "/opt/puppetlabs/server/data/postgresql/classifier/PG_11_201809051", 
+                "/opt/puppetlabs/server/data/postgresql/orchestrator/PG_11_201809051", 
+                "/opt/puppetlabs/server/data/postgresql/puppetdb/PG_11_201809051", 
+                "/opt/puppetlabs/server/data/postgresql/rbac/PG_11_201809051"
+              ], 
+              "used_bytes": 181899264
+            }
+          }
+        }, 
+        "pe_server_version": "2019.8.1", 
+        "physicalprocessorcount": 4, 
+        "platform_symlink_writable": true, 
+        "platform_tag": "el-7-x86_64", 
+        "processor0": "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+        "processor1": "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+        "processor2": "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+        "processor3": "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+        "processorcount": 4, 
+        "processors": {
+          "count": 4, 
+          "isa": "x86_64", 
+          "models": [
+            "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+            "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+            "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz", 
+            "Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz"
+          ], 
+          "physicalcount": 4
+        }, 
+        "productname": "VMware Virtual Platform", 
+        "puppet_files_dir_present": false, 
+        "puppet_inventory_metadata": {
+          "packages": {
+            "collection_enabled": false, 
+            "last_collection_time": "0.0s"
+          }
+        }, 
+        "puppetversion": "6.17.0", 
+        "ruby": {
+          "platform": "x86_64-linux", 
+          "sitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.5.0", 
+          "version": "2.5.8"
+        }, 
+        "rubyplatform": "x86_64-linux", 
+        "rubysitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.5.0", 
+        "rubyversion": "2.5.8", 
+        "scope6": "global", 
+        "scope6_ens192": "global", 
+        "scope6_lo": "host", 
+        "selinux": true, 
+        "selinux_config_mode": "enforcing", 
+        "selinux_current_mode": "enforcing", 
+        "selinux_enforced": true, 
+        "selinux_policyversion": "31", 
+        "serialnumber": "VMware-42 20 2f 9b 26 0f 66 36-43 3d 78 6c 50 1b be 4b", 
+        "ssh": {
+          "ecdsa": {
+            "fingerprints": {
+              "sha1": "SSHFP 3 1 4754ff27cb174a75ada9269322f8fdb72c5f1a17", 
+              "sha256": "SSHFP 3 2 f9f2285eb96b1e4310aac1f7b4bd660a0f25235837d374e3c9e1095f31e84a6a"
+            }, 
+            "key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJJh2W9I2K8BTb0WqJPWXJ1KNAYg0Lj0aYrCkJ3OexK+MgBkrs5msp7xVreWgCy5j60wHYINsz4a7LEwlSLEvZ8=", 
+            "type": "ecdsa-sha2-nistp256"
+          }, 
+          "ed25519": {
+            "fingerprints": {
+              "sha1": "SSHFP 4 1 ef7190594d1991d7b2651f69661a399bab9bdd73", 
+              "sha256": "SSHFP 4 2 5c52d65abd0fbc7acb25f6cd85ef889627f9415a0038f03d869d7890c30d1c79"
+            }, 
+            "key": "AAAAC3NzaC1lZDI1NTE5AAAAIAQzTW6TicUiyta8hTM8xVQmzYPY5l3e4/FFvX8a5FcE", 
+            "type": "ssh-ed25519"
+          }, 
+          "rsa": {
+            "fingerprints": {
+              "sha1": "SSHFP 1 1 895e447fa7f3f319fdbe9df6315a2b8c80cb0881", 
+              "sha256": "SSHFP 1 2 9fffb4fd6dbe324bb2b26ec13500e8dca17760f9ffdadc298ac06cab2e138c35"
+            }, 
+            "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCtHQj+NPnU28VgQdYFJqSqj/i0EFDrE+tL3hguZyw0/hJOb4BhIwMWlGN+lxercHFWBHy6BlSQuOpu1OWd9SPp1ufKFRqgWyOTsLyTmCNXYwZAD9RcoknSEWzgdaUzKcwrI76p/0jMBY4alrMC+1Iz7PshQAiNhzurVf8idjeQDA+Vl/YunCcZ2glf5Gaj3Yw2HqJ70fohWHfI/o2+gfeeid74yyEme+ETNHRAaepOZlev0QzmByBCzJEFDuczLgBlUqXamSfRz+ApLLah49sBlmBwO31CHHbq+UdCmr3vTY4/Z9T0G0nh/f4is5m78QyMcNjKW/2/eDSBkfDZJOir", 
+            "type": "ssh-rsa"
+          }
+        }, 
+        "sshecdsakey": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJJh2W9I2K8BTb0WqJPWXJ1KNAYg0Lj0aYrCkJ3OexK+MgBkrs5msp7xVreWgCy5j60wHYINsz4a7LEwlSLEvZ8=", 
+        "sshed25519key": "AAAAC3NzaC1lZDI1NTE5AAAAIAQzTW6TicUiyta8hTM8xVQmzYPY5l3e4/FFvX8a5FcE", 
+        "sshfp_ecdsa": "SSHFP 3 1 4754ff27cb174a75ada9269322f8fdb72c5f1a17\nSSHFP 3 2 f9f2285eb96b1e4310aac1f7b4bd660a0f25235837d374e3c9e1095f31e84a6a", 
+        "sshfp_ed25519": "SSHFP 4 1 ef7190594d1991d7b2651f69661a399bab9bdd73\nSSHFP 4 2 5c52d65abd0fbc7acb25f6cd85ef889627f9415a0038f03d869d7890c30d1c79", 
+        "sshfp_rsa": "SSHFP 1 1 895e447fa7f3f319fdbe9df6315a2b8c80cb0881\nSSHFP 1 2 9fffb4fd6dbe324bb2b26ec13500e8dca17760f9ffdadc298ac06cab2e138c35", 
+        "sshrsakey": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCtHQj+NPnU28VgQdYFJqSqj/i0EFDrE+tL3hguZyw0/hJOb4BhIwMWlGN+lxercHFWBHy6BlSQuOpu1OWd9SPp1ufKFRqgWyOTsLyTmCNXYwZAD9RcoknSEWzgdaUzKcwrI76p/0jMBY4alrMC+1Iz7PshQAiNhzurVf8idjeQDA+Vl/YunCcZ2glf5Gaj3Yw2HqJ70fohWHfI/o2+gfeeid74yyEme+ETNHRAaepOZlev0QzmByBCzJEFDuczLgBlUqXamSfRz+ApLLah49sBlmBwO31CHHbq+UdCmr3vTY4/Z9T0G0nh/f4is5m78QyMcNjKW/2/eDSBkfDZJOir", 
+        "staging_http_get": "curl", 
+        "swapfree": "3.50 GiB", 
+        "swapfree_mb": 3583.99609375, 
+        "swapsize": "3.50 GiB", 
+        "swapsize_mb": 3583.99609375, 
+        "system_uptime": {
+          "days": 2, 
+          "hours": 48, 
+          "seconds": 175543, 
+          "uptime": "2 days"
+        }, 
+        "timezone": "CDT", 
+        "trusted": {
+          "authenticated": "remote", 
+          "certname": "peserver01.grt.local", 
+          "domain": "grt.local", 
+          "extensions": {
+            "1.3.6.1.4.1.34380.1.3.39": "true"
+          }, 
+          "external": {}, 
+          "hostname": "peserver01"
+        }, 
+        "uptime": "2 days", 
+        "uptime_days": 2, 
+        "uptime_hours": 48, 
+        "uptime_seconds": 175543, 
+        "uuid": "9B2F2042-0F26-3666-433D-786C501BBE4B", 
+        "virtual": "vmware"
+      }, 
+      "name": "prodpe"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@import '~@puppet/sass-variables/index';
+
+.route-dashboard {
+  .rc-heading {
+    margin-bottom: 12px;
+  }
+  .rc-hr {
+    background: rgb(228, 233, 237);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .rc-metrics {
+    margin-bottom: 16px;
+  }
+
+  .rc-table-header {
+    margin-bottom: 8px;
+  }
+}
+
+.ScreenHeader {
+  margin-bottom: 28px;
+  margin-top: 12px;
+}
+
+.ScreenHeader-description {
+  margin-top: 10px;
+}

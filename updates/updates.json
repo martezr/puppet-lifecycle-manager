@@ -1,0 +1,60 @@
+{
+  "version": "0.0.1",
+    "releases": [
+      {
+        "agent_version": "6.17.0",
+        "release_date": "06-23-2020",
+        "release_notes": "",
+        "version": "2019.8.1",
+        "known_issues": "",
+        "recommendations": [
+          {"condition":"",
+           "recommendation":""}
+        ],
+        "server_requirements": {
+          "processor": 4,
+          "memory": 8,
+          "operating_systems": [
+            {"ubuntu": ["16.04"]},
+            {"centos": ["7"]}
+          ]
+        },
+        "agent_requirements": {
+          "operating_systems": [{"ubuntu": ["16.04"]}]
+        }
+    },
+      {
+          "agent_version": "6.16.0",
+          "release_date": "06-23-2020",
+          "release_notes": "",
+          "version": "2019.8.0",
+          "known_issues": "",
+          "server_requirements": {
+            "processor": 4,
+            "memory": 8,
+            "operating_systems": [
+              {"ubuntu": ["16.04"]},
+              {"centos": ["7"]}
+            ]
+          },
+          "agent_requirements": {
+            "operating_systems": [{"ubuntu": ["16.04"]}]
+          }
+      },
+      {
+        "agent_version": "6.16.0",
+        "release_date": "06-23-2020",
+        "release_notes": "",
+        "version": "2019.7.0",
+        "known_issues": "",
+        "server_requirements": {
+          "processor": "4",
+          "memory": "8",
+          "operating_systems": [{"ubuntu": ["16.04"]}]
+        },
+        "agent_requirements": {
+          "operating_systems": [{"ubuntu": ["16.04"]}]
+        }
+    }
+    ]
+}

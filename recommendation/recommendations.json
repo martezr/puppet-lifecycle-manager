@@ -1,0 +1,40 @@
+{
+  "version": "1.2.1",
+  "recommendations": [
+    {
+      "name":"deploy compiler", 
+      "condition": "name == 'prodpe' and endpointdata.data.peversion == '2019.8.1'",
+      "details": "The Puppet Enterprise architecture dictates 2k or more nodes",
+      "recommendation": "A compiler should be deployed as the node count is greater than 2,000",
+      "tags": ["compiler"]
+    },
+    {
+      "name":"deploy compiler", 
+      "condition": "endpointdata.data.peversion == '2019.8.1' and endpointdata.data.nodecount > 2000 and data.architecture == 'standard'",
+      "details": "The Puppet Enterprise architecture dictates 2k or more nodes",
+      "recommendation": "A compiler should be deployed as the node count is greater than 2,000",
+      "tags": ["compiler", "2019.8.1"]
+    },
+    {
+      "name":"upgrade pe", 
+      "condition": "endpointdata.data.peversion != '2019.8.1'",
+      "details": "The Puppet Enterprise architecture dictates 2k or more nodes",
+      "recommendation": "A compiler should be deployed as the node count is greater than 2,000",
+      "tags": ["upgrade","data"]
+    },
+    {
+      "name":"memory requirements", 
+      "condition": "endpointdata.facts.memorysize_mb < 16386",
+      "details": "https://puppet.com/docs/pe/2019.8/hardware_requirements.html#hardware_requirements_standard",
+      "recommendation": "The memory size deployed for PE shouldn't be less than 16 GB",
+      "tags": ["hardware"]
+    },
+    {
+      "name":"cpu requirements", 
+      "condition": "endpointdata.facts.physicalprocessorcount < 8 and endpointdata.data.nodecount > 500",
+      "details": "The CPU shouldn't be less than 8 for a node count of more than 500",
+      "recommendation": "The CPU shouldn't be less than 8 for a node count of more than 500",
+      "tags": ["hardware"]
+    }
+  ]
+}
