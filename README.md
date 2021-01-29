@@ -1,7 +1,7 @@
 # puppet-lifecycle-manager
 
 [![GitHub release](https://img.shields.io/github/release/martezr/puppet-lifecycle-manager.svg)](https://github.com/martezr/puppet-lifecycle-manager/releases)
-[![license](https://img.shields.io/github/license/martezr/puppet-lifecycle-manager.svg)](https://github.com/martezr/puppet-lifecycle-manager/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/martezr/puppet-lifecycle-manager.svg)](https://github.com/martezr/puppet-lifecycle-manager/blob/main/LICENSE)
 
 An open source platform for managing the entire lifecycle of Puppet Enterprise instances.
 
