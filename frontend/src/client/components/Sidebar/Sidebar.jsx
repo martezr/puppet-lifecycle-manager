@@ -16,6 +16,7 @@ const AppSidebar = ({ t, location: { pathname } }) => (
     <Sidebar.Navigation>
       <Sidebar.Section>
         <Sidebar.Item title="Dashboard" icon="dashboard" as={Link} to="/" />
+        <Sidebar.Item title="Nodes" icon="hardware" as={Link} to="/nodes" />
         <Sidebar.Item title="Upgrade" icon="share" as={Link} to="/upgrade" />
         <Sidebar.Item title="Endpoints" icon="hardware" as={Link} to="/endpoints" />
       </Sidebar.Section>

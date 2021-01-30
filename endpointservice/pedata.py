@@ -74,5 +74,9 @@ def sync_endpoint():
 
 
 if __name__ == "__main__":
-    tokendata = fetch_token('https://boltwsmaster0.classroom.puppet.com:4433/rbac-api/v1/auth/token','admin','puppetlabs')
+    tokendata = fetch_token('https://mrs0129.classroom.puppet.com:4433/rbac-api/v1/auth/token','admin','puppetlabs')
+#    url = 'https://mrs0129.classroom.puppet.com:4433/status/v1/services'
+#    headers = {'X-Authentication': tokendata}
+#    response = requests.get(url, headers=headers, verify=False)
+#    print(json.dumps(response.json()))
     print(tokendata)

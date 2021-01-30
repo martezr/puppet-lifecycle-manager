@@ -1,6 +1,6 @@
-import Home from 'routes/Home';
-
 import Dashboard from 'routes/Dashboard';
+
+import Nodes from 'routes/Nodes';
 
 import Upgrade from 'routes/Upgrade';
 
@@ -12,6 +12,11 @@ const routes = [{
   title: 'Dashboard',
   path: '/',
   view: Dashboard
+},
+{
+  title: 'Nodes',
+  path: '/nodes',
+  view: Nodes
 },
 {
   title: 'Upgrade',

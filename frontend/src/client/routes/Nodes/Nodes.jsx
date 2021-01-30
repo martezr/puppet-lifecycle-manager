@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Breadcrumb, Heading, Button, Text, Link } from '@puppet/react-components';
-import './Endpoints.scss';
+import './Nodes.scss';
 import { Table } from '@puppet/data-grid';
 
 
@@ -21,17 +21,17 @@ const initialValues = {
   URL: '',
 };
 
-const emptyStateHeader = 'No Endpoints';
+const emptyStateHeader = 'No Nodes';
 const emptyStateMessage = 'Add endpoints by clicking the Add Endpoint button';
 
-const Endpoints = () => {
+const Nodes = () => {
 
   const [endpointData, setEndpointData] = useState([]);
 
   useEffect(() => {
     const fetchEndpointData = async () => {
       const response = await fetch(
-        'http://localhost:8090/api/v1/endpoints',
+        'http://localhost:8090/api/v1/nodes',
       );
       const endpointinfo = await response.json();
       setEndpointData(endpointinfo.endpoints);
@@ -43,17 +43,14 @@ const Endpoints = () => {
   return (
   <div className="route-endpoints">
     <Breadcrumb>
-      <Breadcrumb.Section>Endpoints</Breadcrumb.Section>
+      <Breadcrumb.Section>Nodes</Breadcrumb.Section>
     </Breadcrumb>
   <div className="ScreenHeader">
-    <Heading>Puppet Enterprise Endpoints</Heading>
+    <Heading>Puppet Enterprise Nodes</Heading>
   <div className="ScreenHeader-description">
-    <Text>Manage Puppet Enterprise endpoints</Text>
+    <Text>Puppet Enterprise agents</Text>
   </div>
 <div>
-<div className="endpoint-table-header">
-<Button icon="plus" style={buttonStyle} as="a" href="/addendpoint">Add Endpoint</Button>
-</div>
 <div>
 <Table 
     selectable 
@@ -69,4 +66,4 @@ const Endpoints = () => {
 );
 };
 
-export default Endpoints;
+export default Nodes;
